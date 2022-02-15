@@ -1,8 +1,34 @@
+---
+description: Mimicry uses a new defi primitive called perpetual non-fungible futures.
+---
+
 # 👨💻 Protocol Architecture
+
+### How Data Flows
+
+Players may take positions by selecting a number of variables and depositing collateral. New positions are represented as ERC-721 tokens (Mimics).&#x20;
+
+![Mimicry data flow diagram](<.gitbook/assets/Mimicry Swim Lanes - Business process flow example.svg>)
+
+### Mimics as NFTs
+
+Each minted Mimic will contain specialized metadata written to the blockchain. When rendered within a wallet, that data, along with real-time performance information, will be visible in the NFT itself. Some of the data recorded will include:
+
+* The type of ERC-20 collateral deposited, including contract address
+* The amount of deposited collateral
+* The NFT collection to peg value against, including contract address
+* The direction of the price peg (standard or inverse)
+* The collateralization ratio
+* The time that the position was opened
+* The percentage-based gains or losses, relative to USD, if the position were to close right now&#x20;
+
+![](.gitbook/assets/byac-nft.svg)      ![](.gitbook/assets/byac.svg)
+
+For the purposes of illustration, we imagine combining the Uniswap v3 LP token design with a posterize filter applied to a randomly selected asset from whatever collection happens to be pegged by the metadata.&#x20;
 
 ### **Minting Mimics**
 
-An $MIMIC holder can mint USDm by locking their $MIMIC as collateral via the Mimicry smart contract. The steps involved when a $MIMIC holder mints are:
+A $MIMIC holder can mint USDm by locking their $MIMIC as collateral via the Mimicry smart contract. The steps involved when a $MIMIC holder mints are:
 
 * The Mimicry contract checks that the $MIMIC depositor can mint Mimics against their $MIMIC, which requires their Collateralization Ratio to be below 800%.
 * Their debt is added to the Debt Register. The debt is the amount of the new value minted, and is stored in USDm

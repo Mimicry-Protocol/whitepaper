@@ -1,20 +1,22 @@
 ---
 description: >-
-  $MIMIC is an ERC20 token that rewards depositors for adding liquidity to the
+  $MIME is an ERC20 token that rewards depositors for adding liquidity to the
   global debt pool.
 ---
 
-# 🪙 Tokenomics
+# 🪙 $MIME Tokenomics
 
 ### How Mimics Work
 
-All Mimics are backed by $MIMIC tokens. Mimics are minted when $MIMIC holders deposit their $MIMIC as collateral. Mimics are currently backed by an 800% collateralization ratio, although this may be raised or lowered in the future through community governance mechanisms. $MIMIC depositors incur debt when they mint Mimics, and to exit the system (i.e. unlock their $MIMIC) they must pay back this debt by burning Mimics.
+A Mimic is an ERC-721 token that represents a person's deposited collateral, chosen collateralization ratio, liquidation ratio, long or short position on a particular NFT collection, and other basic metadata. As the value of the deposited collateral goes up or down with the macroeconomic market factors, the value of the Mimic changes. As the appraised value of the NFT collection the Mimic is pegged to changes, the value of the Mimic changes. As the appraised value of the&#x20;
+
+All Mimics are backed by ERC-20 collateral. Mimics are minted when $MIMIC holders deposit their $MIMIC as collateral. Mimics are currently backed by an 800% collateralization ratio, although this may be raised or lowered in the future through community governance mechanisms. $MIMIC depositors incur debt when they mint Mimics, and to exit the system (i.e. unlock their $MIMIC) they must pay back this debt by burning Mimics.
 
 For example, suppose you want to mint a mimic for the Bored Ape Yacht Club (BAYCm). The floor price of the BAYC collection on OpenSea at the time of writing is about $275,000 USD, so each new BAYCm token would require $2.2M worth of $MIMIC collateral. However, you could also mint approximately 0.00000045 BAYCm tokens by collateralizing just $1 of $MIMIC.
 
 ### Why Deposit $MIMIC
 
-$MIMIC holders are incentivized to deposit their tokens and mint Mimics in several ways.&#x20;
+$MIMIC holders are incentivized to deposit their tokens and mint Mimics in several ways.
 
 Firstly, there are exchange revenue rewards. These are generated whenever someone exchanges fiat for a Mimic, or one Mimic to another, because each trade generates an exchange fee that is sent to a fee pool. $MIMIC depositors may claim their proportion each week. Exchange rewards are accrued in WETH.
 
@@ -36,8 +38,3 @@ There are two methods to maintain the Mimic peg:
 
 * **Arbitrage**: MIMIC depositors have created debt by minting Mimics, so if the peg drops they can now profit by buying USDm back below par and burning it to reduce their debt, as the Mimicry system always values 1 USDm at $1 USD.
 * **$MIMIC liquidity pool on Uniswap**: each week, a portion of the $MIMIC added to the total supply through the inflationary monetary policy is distributed as reward to people providing MIMIC/USDC liquidity on Uniswap. This allows traders to purchase $MIMIC to start trading or sell $MIMIC to take profits.
-
-\
-
-
-\
