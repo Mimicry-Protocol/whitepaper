@@ -16,7 +16,7 @@ Perhaps the most notable risk is price manipulation. This may occur if a bad act
 
 #### Collection Inclusion Algorithm
 
-At launch our algorithmic inclusion solution will be conservative in nature and require that NFT collections meet the following criteria:&#x20;
+Best efforts must be taken to prevent bad actors from manipulating collection peg prices. As such, at launch our algorithmic inclusion solution will be conservative in nature and require that NFT collections meet the following criteria:&#x20;
 
 * Opensea verified
 * No wallet owns more than 3% of the collection
@@ -31,9 +31,7 @@ This inclusion algorithm will mature over time through the use of machine learni
 
 #### Collection Appraisal Algorithm
 
-Best efforts must be taken to prevent bad actors from manipulating collection peg prices. Accordingly, we have adopted a time-weighted average pricing (TWAP) mechanism because it will require considerable time and resources in order to manipulate.
-
-At launch we will use the TWAP from all sales from the prior thirty days. In time we will improve the sophistication of this appraisal algorithm by shifting to a volume-weighted average pricing (VWAP) and removing the outlier transactions, represented as the top and bottom 5% of transactions when ordered by price in USD. Additionally we will also analyze all items for sale by each owner and determine the average floor price amongst their collection tokens that have been listed for sale for at least 24 hours ("Owner Floors"). We'll then determine the average floor price of the bottom 20% of Owner Floors. This value will be multiplied by the TWAP, less outliers. The final value will be the v2 collection appraisal peg.
+At launch we will use the time-weighted average pricing (TWAP) from all sales from the prior thirty days. In time we will improve the sophistication of this appraisal algorithm by shifting to a volume-weighted average pricing (VWAP) and removing the outlier transactions, represented as the top and bottom 5% of transactions when ordered by price in USD. Additionally we will also analyze all items for sale by each owner and determine the average floor price amongst their collection tokens that have been listed for sale for at least 24 hours ("Owner Floors"). We'll then determine the average floor price of the bottom 20% of Owner Floors. This value will be multiplied by the TWAP, less outliers. The final value will be the v2 collection appraisal peg.
 
 ### **Data Feed Downtime Risk**
 
