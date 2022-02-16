@@ -22,7 +22,7 @@ Once the Mimicry smart contracts are ready for testing we'll release our consume
 * Mechanism to deposit $MIME to earn rewards
 * Mechanism to swap Mimics
 * Mechanism to view collateral balances
-* Mechanism to claim staking rewards
+* Mechanism to claim rewards
 * Mechanism to burn Mimics and release deposited collateral
 
 ### Non-Exhaustive Potential Product Expansion
