@@ -10,25 +10,25 @@ description: >-
 
 A Mimic is an ERC-721 token that represents a person's deposited collateral, chosen collateralization ratio, liquidation ratio, long or short position on a particular NFT collection, and other basic metadata. As the value of the deposited collateral goes up or down with the macroeconomic market factors, the value of the Mimic changes. As the appraised value of the NFT collection the Mimic is pegged to changes, the value of the Mimic changes. As the appraised value of the&#x20;
 
-All Mimics are backed by ERC-20 collateral. Mimics are minted when $MIME holders deposit their $MIME as collateral. Mimics are currently backed by an 800% collateralization ratio, although this may be raised or lowered in the future through community governance mechanisms. $MIME depositors incur debt when they mint Mimics, and to exit the system (i.e. unlock their $MIME) they must pay back this debt by burning Mimics.
+All Mimics are backed by ERC-20 collateral. Mimics are minted when $MIMIC holders deposit their $MIMIC as collateral. Mimics are currently backed by an 800% collateralization ratio, although this may be raised or lowered in the future through community governance mechanisms. $MIMIC depositors incur debt when they mint Mimics, and to exit the system (i.e. unlock their $MIMIC) they must pay back this debt by burning Mimics.
 
-For example, suppose you want to mint a mimic for the Bored Ape Yacht Club (BAYCm). The floor price of the BAYC collection on OpenSea at the time of writing is about $275,000 USD, so each new BAYCm token would require $2.2M worth of $MIME collateral. However, you could also mint approximately 0.00000045 BAYCm tokens by collateralizing just $1 of $MIME.
+For example, suppose you want to mint a mimic for the Bored Ape Yacht Club (BAYCm). The floor price of the BAYC collection on OpenSea at the time of writing is about $275,000 USD, so each new BAYCm token would require $2.2M worth of $MIMIC collateral. However, you could also mint approximately 0.00000045 BAYCm tokens by collateralizing just $1 of $MIMIC.
 
-### Why Deposit $MIME
+### Why Deposit $MIMIC
 
-$MIME holders are incentivized to deposit their tokens and mint Mimics in several ways.
+$MIMIC holders are incentivized to deposit their tokens and mint Mimics in several ways.
 
-Firstly, there are exchange revenue rewards. These are generated whenever someone exchanges fiat for a Mimic, or one Mimic to another, because each trade generates an exchange fee that is sent to a fee pool. $MIME depositors may claim their proportion each week. Exchange rewards are accrued in WETH.
+Firstly, there are exchange revenue rewards. These are generated whenever someone exchanges fiat for a Mimic, or one Mimic to another, because each trade generates an exchange fee that is sent to a fee pool. $MIMIC depositors may claim their proportion each week. Exchange rewards are accrued in WETH.
 
-The other incentive for $MIME holders to deposit is $MIME depositing rewards, which comes from the protocol’s community rewards. For the first 48 months from the launch of the mainnet, 10% of the total $MIME token supply will be distributed to $MIME depositors weekly on a pro-rata basis, provided their collateralization ratio does not fall below the target threshold.
+The other incentive for $MIMIC holders to deposit is $MIMIC depositing rewards, which comes from the protocol’s community rewards. For the first 48 months from the launch of the mainnet, 10% of the total $MIMIC token supply will be distributed to $MIMIC depositors weekly on a pro-rata basis, provided their collateralization ratio does not fall below the target threshold.
 
 ### **Minting, Burning, and the C-Ratio**
 
-The mechanisms above ensure $MIME depositors are incentivized to maintain their Collateralization Ratio (C-Ratio) at the optimal rate (currently 800%). This ensures Mimics are backed by sufficient collateral to absorb large price shocks. If the value of $MIME or Mimics fluctuate, each staker’s C Ratio will fluctuate. If it falls below 800% (although there is a small buffer allowing for minor fluctuations), they will be unable to claim fees until they restore their ratio. They adjust their ratio by either minting Mimics if their ratio is above 800%, or burning Mimics if their ratio is below 800%.
+The mechanisms above ensure $MIMIC depositors are incentivized to maintain their Collateralization Ratio (C-Ratio) at the optimal rate (currently 800%). This ensures Mimics are backed by sufficient collateral to absorb large price shocks. If the value of $MIMIC or Mimics fluctuate, each staker’s C Ratio will fluctuate. If it falls below 800% (although there is a small buffer allowing for minor fluctuations), they will be unable to claim fees until they restore their ratio. They adjust their ratio by either minting Mimics if their ratio is above 800%, or burning Mimics if their ratio is below 800%.
 
 ### **Depositors, Debt, and Pooled Counterparties**
 
-$MIME depositors incur a ‘debt’ when they mint Mimics. This debt can increase or decrease independent of their original minted value, based on the exchange rates and supply of Mimics within the network. For example, if 100% of the Mimics in the system were BAYC mimics (BAYCm), which halved in price, the debt in the system would halve, and each depositor's debt would also halve. This means in another scenario, where only half the Mimics across the system were BAYCm, and BAYC doubled in price, the system’s total debt—and each depositor's debt—would increase by one quarter. In this way, $MIME depositors act as a pooled counterparty to all Mimic exchanges; depositors take on the risk of the overall debt in the system. They have the option of hedging this risk by taking positions external to the system. By incurring this risk and enabling trading, depositors earn a right to fees generated by the system.
+$MIMIC depositors incur a ‘debt’ when they mint Mimics. This debt can increase or decrease independent of their original minted value, based on the exchange rates and supply of Mimics within the network. For example, if 100% of the Mimics in the system were BAYC mimics (BAYCm), which halved in price, the debt in the system would halve, and each depositor's debt would also halve. This means in another scenario, where only half the Mimics across the system were BAYCm, and BAYC doubled in price, the system’s total debt—and each depositor's debt—would increase by one quarter. In this way, $MIMIC depositors act as a pooled counterparty to all Mimic exchanges; depositors take on the risk of the overall debt in the system. They have the option of hedging this risk by taking positions external to the system. By incurring this risk and enabling trading, depositors earn a right to fees generated by the system.
 
 ### Mimic Pegging Mechanism <a href="#synth-pegging-mechanism" id="synth-pegging-mechanism"></a>
 
@@ -37,4 +37,4 @@ The Mimic peg is critical to a well functioning system, because traders require 
 There are two methods to maintain the Mimic peg:
 
 * **Arbitrage**: MIMIC depositors have created debt by minting Mimics, so if the peg drops they can now profit by buying USDm back below par and burning it to reduce their debt, as the Mimicry system always values 1 USDm at $1 USD.
-* **$MIME liquidity pool on Uniswap**: each week, a portion of the $MIME added to the total supply through the inflationary monetary policy is distributed as reward to people providing MIME/USDC liquidity on Uniswap. This allows traders to purchase $MIME to start trading or sell $MIME to take profits.
+* **$MIMIC liquidity pool on Uniswap**: each week, a portion of the $MIMIC added to the total supply through the inflationary monetary policy is distributed as reward to people providing MIMIC/USDC liquidity on Uniswap. This allows traders to purchase $MIMIC to start trading or sell $MIMIC to take profits.
