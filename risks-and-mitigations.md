@@ -35,7 +35,7 @@ At launch we will use the time-weighted average pricing (TWAP) from all sales fr
 
 ### **Data Feed Downtime Risk**
 
-Price data must be reliable in order for the liquidation contracts to be able to function properly. At launch this risk will be present because we are leveraging third-party APIs in order to evaluate price data, and these feeds may experience downtime. Eventually this risk will be mitigated through the use of Graph queries to analyze on-chain data.
+Price data must be reliable in order for the liquidation contracts to be able to function properly. At launch this risk will be present because we are leveraging third-party APIs in order to evaluate price data, and these feeds may experience downtime.
 
 ### Centralization Risk
 
