@@ -18,7 +18,7 @@ Perhaps the most notable risk is price manipulation. This may occur if a bad act
 
 Best efforts must be taken to prevent bad actors from manipulating collection peg prices. As such, at launch our algorithmic inclusion solution will be conservative in nature and require that NFT collections meet the following criteria:&#x20;
 
-* Opensea verified
+* OpenSea verified
 * No wallet owns more than 3% of the collection
 * \>= 30 days since first listed
 * \>= 5,000 tokens in the collection
