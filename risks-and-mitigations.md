@@ -43,7 +43,7 @@ At launch there will be the risk that a government or corporate actor may disrup
 
 ### **Data Feed Manipulation Risk**
 
-The the smart contracts that monitor collateral and process liquidations must leverage trustworthy off-chain data when making decisions. Accordingly, we will leverage the Chainlink request & receive model for processing information from our collection inclusion and appraisal algorithms.
+The the smart contracts that monitor collateral and process liquidations must leverage trustworthy off-chain data when making decisions. Accordingly, we will leverage an oracle for processing information from our collection inclusion and appraisal algorithms.
 
 ### **Smart Contract Risks**
 
