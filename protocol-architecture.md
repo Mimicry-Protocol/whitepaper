@@ -8,7 +8,7 @@ description: Mimicry uses a new defi primitive called perpetual non-fungible fut
 
 Players may take positions by selecting a number of variables and depositing collateral. New positions are represented as ERC-721 tokens (Mimics).&#x20;
 
-![Mimicry data flow diagram](<.gitbook/assets/Mimicry Swim Lanes - Business process flow example.svg>)
+![Mimicry data flow diagram](<.gitbook/assets/Mimicry Swim Lanes.png>)
 
 ### Mimics as NFTs
 
