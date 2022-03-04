@@ -12,7 +12,7 @@ Players may take positions by selecting a number of variables and depositing col
 
 ### Mimics as NFTs
 
-Each minted Mimic will contain specialized metadata written to the blockchain. When rendered within a wallet, that data, along with real-time performance information, will be visible in the NFT itself. Some of the data recorded will include:
+Each minted Mimic will contain specialized metadata written to the blockchain. When rendered within a wallet, that data, along with real-time performance information, will be visible in the NFT itself. Some of the data recorded may include:
 
 * The type of ERC-20 collateral deposited, including contract address
 * The amount of deposited collateral
@@ -22,7 +22,7 @@ Each minted Mimic will contain specialized metadata written to the blockchain. W
 * The time that the position was opened
 * The percentage-based gains or losses, relative to USD, if the position were to close right now&#x20;
 
-![](.gitbook/assets/byac-nft.svg)      ![](.gitbook/assets/byac.svg)
+![](.gitbook/assets/BMAYCm.svg)
 
 For the purposes of illustration, we imagine combining the Uniswap v3 LP token design with a posterize filter applied to a randomly selected asset from whatever collection happens to be pegged by the metadata.&#x20;
 
