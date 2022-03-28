@@ -14,12 +14,14 @@ Players may take positions by selecting a number of variables and depositing col
 
 Each minted Mimic will contain specialized metadata written to the blockchain. When rendered within a wallet, that data, along with real-time performance information, will be visible in the NFT itself. Some of the data recorded may include:
 
-* The type of ERC-20 collateral deposited, including contract address
-* The amount of deposited collateral
 * The NFT collection to peg value against, including contract address
-* The direction of the price peg (standard or inverse)
-* The time that the position was opened
-* The percentage-based gains or losses, relative to USD, if the position were to close right now&#x20;
+* The direction of the collection's market-cap price prediction (up or down)
+* The type of ERC-20 collateral deposited, including contract address
+* The amount of deposited collateral in USD terms
+* The USD liquidation value of the position after fees
+* The amount of profit expressed as a percentage
+* The amount of paper profit in USD terms
+* The amount of time the position has been open
 
 ![](.gitbook/assets/BMAYCm.svg)
 
@@ -27,9 +29,9 @@ For the purposes of illustration, we imagine combining the Uniswap v3 LP token d
 
 ### **Minting Mimics**
 
-A $MIME holder can mint USDm by locking their $MIME as collateral via the Mimicry smart contract. The steps involved when a $MIME holder mints are:
+Participants can mint a Mimic by depositing ERC-20 collateral into the Mimicry smart contract. The steps involved with minting are:
 
-* The Mimicry contract checks that the $MIME depositor can mint Mimics against their $MIME.
+* The Mimicry contract checks that the collection meets certain safety standards
 * Their debt is added to the Debt Register. The debt is the amount of the new value minted, and is stored in USDm
 * With the debt assigned to the depositor, the Mimicry contract instructs the USDm contract to issue the new amount. It adds it to its total supply and assigns the newly minted USDm to the user’s wallet.
 
