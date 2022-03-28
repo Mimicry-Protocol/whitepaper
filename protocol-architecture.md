@@ -1,5 +1,5 @@
 ---
-description: Mimicry uses a new defi primitive called perpetual non-fungible futures.
+description: Mimicry serves as a new defi primitive.
 ---
 
 # 👨💻 Protocol Architecture
@@ -8,7 +8,7 @@ description: Mimicry uses a new defi primitive called perpetual non-fungible fut
 
 Players may take positions by selecting a number of variables and depositing collateral. New positions are represented as ERC-721 tokens (Mimics).&#x20;
 
-![Mimicry data flow diagram](<.gitbook/assets/Mimicry Swim Lanes.png>)
+![Mimicry data flow diagram](<.gitbook/assets/Mimicry Swim Lanes (1).png>)
 
 ### Mimics as NFTs
 
@@ -18,7 +18,6 @@ Each minted Mimic will contain specialized metadata written to the blockchain. W
 * The amount of deposited collateral
 * The NFT collection to peg value against, including contract address
 * The direction of the price peg (standard or inverse)
-* The collateralization ratio
 * The time that the position was opened
 * The percentage-based gains or losses, relative to USD, if the position were to close right now&#x20;
 
@@ -30,7 +29,7 @@ For the purposes of illustration, we imagine combining the Uniswap v3 LP token d
 
 A $MIME holder can mint USDm by locking their $MIME as collateral via the Mimicry smart contract. The steps involved when a $MIME holder mints are:
 
-* The Mimicry contract checks that the $MIME depositor can mint Mimics against their $MIME, which requires their Collateralization Ratio to be below 800%.
+* The Mimicry contract checks that the $MIME depositor can mint Mimics against their $MIME.
 * Their debt is added to the Debt Register. The debt is the amount of the new value minted, and is stored in USDm
 * With the debt assigned to the depositor, the Mimicry contract instructs the USDm contract to issue the new amount. It adds it to its total supply and assigns the newly minted USDm to the user’s wallet.
 
