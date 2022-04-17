@@ -30,8 +30,8 @@ Mimicry is inspired by the Synthentix protocol's pooled collateral model. Mimics
 
 Mimicry would not exist without the prior work of the Synthetix team, and so it almost goes without saying that we are extremely grateful for their work. However, there are several notable differences between the two protocols:
 
-1. Mimicry is designed to mimic non-fungibles exclusively, where Sythentix is designed primarily with fungible tokens in mind. We believe the nature of the game of the global debt pool necessitates two distinct networks.
+1. Mimicry is designed to mimic non-fungibles, where Sythentix is designed primarily with fungible tokens in mind. We believe the nature of the game of the global debt pool necessitates two distinct networks.
 2. We use a different profit and loss algorithm.
 3. Synthetix has no mechanism available for depositors to be able to rapidly create new Synths that mimic the floor price of an NFT collection. Instead the network requires an improvement proposal and DAO vote in order to introduce each new synth.
-4. Synthetix requires that participants begin with $SNX and mint sUSD, and then swap sUSD for another synth. We believe this UX can be simplified and aim to do so by allowing Mimicry participants to use any ERC-20 to mint any Mimic.
+4. Synthetix requires that participants begin with $SNX and mint sUSD, and then swap sUSD for another synth. We believe this UX can be simplified and aim to do so by allowing Mimicry participants to use a wide array of ERC-20 tokens to mint any Mimic.
 5. Synthetix is designed to scale using Optimism, while Mimicry is built for Polygon.
