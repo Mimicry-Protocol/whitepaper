@@ -14,13 +14,13 @@ Players may take positions by selecting a number of variables and depositing col
 
 Each minted Mimic will contain specialized metadata written to the blockchain. When rendered within a wallet, that data, along with real-time performance information, will be visible in the NFT itself. Some of the data recorded may include:
 
-* The NFT collection to peg value against, including contract address
+* The NFT collection to peg value against, including chain ID and contract address
 * The direction of the collection's market-cap price prediction (up or down)
-* The type of ERC-20 collateral deposited, including contract address
-* The amount of deposited collateral in USD terms
-* The USD liquidation value of the position after fees
-* The amount of profit expressed as a percentage
-* The amount of paper profit in USD terms
+* The type of ERC-20 collateral deposited, including chain ID and contract address
+* The amount of deposited collateral, in USD terms
+* The USD liquidation value of the position, after fees
+* The amount of profit, expressed as a percentage
+* The amount of paper profit, in USD terms
 * The amount of time the position has been open
 
 ![](.gitbook/assets/BMAYCm.svg)
@@ -29,29 +29,15 @@ For the purposes of illustration, we imagine combining the Uniswap v3 LP token d
 
 ### **Minting Mimics**
 
-Participants can mint a Mimic by depositing ERC-20 collateral into the Mimicry smart contract. The steps involved with minting are:
+Participants can mint a Mimic by depositing ERC-20 collateral into the Mimicry Pool smart contract. The steps involved with minting are:
 
-* The Mimicry contract checks that the collection meets certain safety standards
-* Their debt is added to the Debt Register. The debt is the amount of the new value minted, and is stored in USDm
-* With the debt assigned to the depositor, the Mimicry contract instructs the USDm contract to issue the new amount. It adds it to its total supply and assigns the newly minted USDm to the user’s wallet.
-
-If the price of $MIME increases, an equivalent portion of a depositor's $MIME is automatically unlocked as collateral. For example, if a user locks $100 of $MIME as collateral, and the value of $MIME doubles, then half of their $MIME (total value: $200) is locked and the other half is unlocked. If they wish, that extra unlocked $MIME can then be deposited to mint more USDm, or any other asset that has a Mimic contract.
-
-### **Exchanges**
-
-The steps involved for the smart contracts to process a Mimic exchange (from USDm to BAYCm in this example) are below:
-
-* Burn the source Mimic (USDm), which involves reducing that wallet address’s USDm balance and updating the total supply of USDm.
-* Establish the conversion amount (i.e. the exchange rate, based on the floor price of the BAYC collection).
-* Charge an exchange fee, which is currently 0.25% of the converted amount, and send the fee as USDm to the fee pool, where it can be claimed by $MIME depositors.
-* The remaining 99.75% is issued by the destination Mimic (BAYCm) contract and the wallet address balance is updated.
-* The BAYCm total supply is updated.
-
-No counterparty is required to exchange, as the system converts the debt from one Mimic to another. Hence no order books or order matching is required, resulting in infinite liquidity between Mimics. No debt change is required to be recorded against the debt pool either, as the same value is burned from the source Mimic and minted from the destination Mimic.
+* The Pool contract checks that the collection meets certain safety standards
+* Collateral is added to the Collateral Pool
+* With the collateral assigned to the depositor, the Pool contract instructs the Mimic contract to issue the new NFT. It's metadata reflects the deposit and is added to the depositor's wallet
 
 ### **Claiming Fees**
 
-When Mimics are exchanged through the Mimicry contract, a 0.25% fee is extracted and sent to the fee pool to be claimed by MIMIC depositors. When claiming fees, a depositor also claims their $MIME depositing rewards, which reward them with extra $MIME for depositing the $MIME they currently have. The smart contracts' process once a depositor requests to claim their fees is as follows:
+When Mimics are burned through the Mimicry contract, a small fee is extracted and sent to the fee pool to be claimed by $MIME depositors. When claiming fees, a depositor also claims their $MIME depositing rewards, which reward them with extra $MIME for depositing the $MIME they currently have. The smart contracts' process once a depositor requests to claim their fees is as follows:
 
 * The fee pool checks whether there are fees currently available and whether the depositor is eligible to receive fees.
 * The amount of fees in USDm is sent to the depositor's wallet address and the balance of the fee pool is updated.

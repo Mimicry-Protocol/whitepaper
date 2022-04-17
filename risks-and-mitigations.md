@@ -1,7 +1,7 @@
 ---
 description: >-
-  Mimicry is an exceptionally complex financial instrument and certain risks
-  exist within the system.
+  Mimicry is a complex financial instrument and certain risks exist within the
+  system.
 ---
 
 # ⚠ Risks & Mitigations
@@ -18,20 +18,18 @@ Perhaps the most notable risk is price manipulation. This may occur if a bad act
 
 Best efforts must be taken to prevent bad actors from manipulating collection peg prices. As such, at launch our algorithmic inclusion solution will be conservative in nature and require that NFT collections meet the following criteria:&#x20;
 
-* OpenSea verified
 * No wallet owns more than 3% of the collection
 * \>= 30 days since first listed
 * \>= 5,000 tokens in the collection
-* \>= 10% of the collection listed for sale
+* <= 10% of the collection listed for sale
 * \>= 1 wallet for every 5 tokens in the collection
-* \>= 0.5% of the total tokens traded within the last seven days
 * \>= $1M in trading volume during the prior 7 days
 
-This inclusion algorithm will mature over time through the use of machine learning. New features for the forthcoming ML algorithms may include: minimum trading volume requirements in USD terms, certain trend-following measurements, certain social signals, evaluation of historic trades, evaluation of metrics of similar collections, etc. This is a non-exhaustive list of possible improvements.&#x20;
+This inclusion algorithm will mature over time. New features may include: minimum trading volume requirements in USD terms, certain trend-following measurements, certain social signals, evaluation of historic trades, evaluation of metrics of similar collections, etc. This is a non-exhaustive list of possible improvements.&#x20;
 
 #### Collection Appraisal Algorithm
 
-At launch we will use the time-weighted average pricing (TWAP) from all sales from the prior thirty days. In time we will improve the sophistication of this appraisal algorithm by shifting to a volume-weighted average pricing (VWAP) and removing the outlier transactions, represented as the top and bottom 5% of transactions when ordered by price in USD. Additionally we will also analyze all items for sale by each owner and determine the average floor price amongst their collection tokens that have been listed for sale for at least 24 hours ("Owner Floors"). We'll then determine the average floor price of the bottom 20% of Owner Floors. This value will be multiplied by the TWAP, less outliers. The final value will be the v2 collection appraisal peg.
+At launch we will use the time-weighted average pricing (TWAP) from all sales from the prior thirty days. In time we will improve the sophistication of this appraisal algorithm by shifting to a model that mimics the [Card Ladder Player Indexes.](https://drive.google.com/file/d/1rOY3tagsT7axRRxZWECh-0zWoMbaYbNp/view)
 
 ### **Data Feed Downtime Risk**
 
@@ -47,16 +45,8 @@ The the smart contracts that monitor collateral and process liquidations must le
 
 ### **Smart Contract Risks**
 
-We've forked the Synthetix codebase and thus most of our contract code benefits from their prior audits. However, we have made edits and our contracts remain unaudited for now.&#x20;
-
-### **Deleveraging Spiral Risk**
-
-Stablecoin markets face deleveraging feedback effects that may cause illiquidity during crises and exacerbate collateral drawdown, and characterize stable dynamics of the system under particular conditions. The possibility of such 'deleveraging spirals' were observable during the Black Thursday' crisis in Dai in 2020.&#x20;
-
-We aim to reduce this risk by routing 25% of protocol revenue to dedicated liquidity pools for $MIME/(DAI:USDC:USDT) and siphoning the farming revenue into a smart contract that will serve as an insurance fund for crises. Funds from this contract will be used to repay debt in the event that a participant closes a position and is owed more profit than is locked in the system.
-
-It's also worth noting that while participants will be able to use the protocol at collateralization ratios lower than 8:1, participants are economically incentivized to deposit $MIME at an 8:1 ratio.
+Our smart contract code has been written by former smart contract auditors, however, the code has not been audited by third-party auditors. Our contracts remain unaudited for now.&#x20;
 
 ### **Macro Economic Risk**
 
-Participants who deposit non-stable collateral are at risk of having their positions liquidated due to the value of their underlying collateralized assets reducing in price relative to the price of other collateral deposited into the network.&#x20;
+Participants who deposit non-stable collateral are at risk of having their positions reduced due to the value of their underlying collateralized assets reducing in price relative to the price of other collateral deposited into the network.&#x20;
