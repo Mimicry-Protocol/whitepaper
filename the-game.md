@@ -37,4 +37,4 @@ Most people are familiar with order books, or trading systems where each positio
    * _In a standard derivatives model, Bob could not exit his position because there is no liquidity on the opposite side of his trade._
    * _In a linear payoff profile for a pooled collateral model, Bob would have liquidated Alice's $100 and also been owed $900 that the system couldn't afford to pay him. This liquidity problem persists even with over-collateralized systems like Synthetix._
    * _In our relative payoff profile we determine how much of the collateral pool Alice and Bob have "rights" over based on their paper winnings relative to available collateral._
-4. Alice has "rights" to 9% of the $200 collateral pool, while Bob has "rights" to 91% of the $200 collateral pool. Therefore, but cashes out $182, and Alice is left with $18.
+4. Alice has "rights" to 9% of the $200 collateral pool, while Bob has "rights" to 91% of the $200 collateral pool. Therefore, Bob cashes out $182, and Alice is left with $18.
