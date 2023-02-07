@@ -24,7 +24,7 @@ Mimicry is inspired by the Synthentix protocol's pooled collateral model. Mimics
 
 ### Why is this needed?
 
-![Gary V on NFTs](<.gitbook/assets/GaryVee on NFTs.png>)
+![Gary V on NFTs](<.gitbook/assets/GaryVee on NFTs (2).png>)
 
 ### Why Not Just Use Synthetix?
 
