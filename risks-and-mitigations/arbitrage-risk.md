@@ -1,0 +1,3 @@
+# Arbitrage Risk
+
+A sophisticated Actor may run their own infrastructure to calculate a Pantomime’s reference-price feed, such as the market capitalization of Bored Ape Yacht Club, and modify their positions when they believe there is extractable value available between the last on-chain reference price and the current reference-price. We believe arbitrage of this nature is a healthy and efficient market dynamic, and one that will be mitigated organically as more and more players race against each other to capture alpha. We will further mitigate this risk by publishing robust Node and Python developer SDKs and well-documented code examples that teach novice software engineers how to easily interact with the Mimicry smart contracts.&#x20;

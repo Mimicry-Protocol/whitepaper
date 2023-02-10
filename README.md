@@ -1,37 +1,47 @@
 ---
-description: Mimicry is a decentralized derivatives protocol for NFT collections.
+description: >-
+  Mimicry is a decentralized prediction game that helps anyone discover the odds
+  of any market.
+cover: .gitbook/assets/Twitter Background Pattern 2x.png
+coverY: 0
 ---
 
 # 👨🏫 Protocol Overview
 
 {% hint style="info" %}
-**Mimicry's mission is to help protect speculators from getting rekt. We believe this protocol needs to exist so people have a safer alternative to buying and holding NFTs.**
+**Mimicry's mission is to help protect speculators from getting rekt. We believe this protocol needs to exist so people have a safer alternative to buying and holding illiquid assets like NFTs.**
 
-This protocol aims to solve the following problems:
+This protocol operates as a [hyperstructure](https://jacob.energy/hyperstructures.html) and aims to solve common problems within illiquid and inefficient asset classes such as NFTs, distilled spirits, trading cards, and more. For example, we address the following desires:
 
-* I want to invest in an expensive NFT collection but I can't afford to buy any
-* I want an NFT portfolio that is _actually_ liquid
-* I want to bundle NFT indexes by artist, utility, visual features, etc.
-* I want to short the NFT market
-* I want to build trade bots for NFTs using social media sentiment indicators
+* I want liquid exposure to \[NFTs, distilled spirits, etc.] as an asset class
+* I want an index-like product that lets me short NFT collections, or the entire NFT market
+* I want exposure to my favorite NFT collections without having to buy-and-hold any of their NFTs
+* I want a simple way to long or short every ERC-20/721/1155 ever created by a specific creator
+* I want to better understand the odds of an NFT collection’s market cap going up or down
 {% endhint %}
 
-### Introduction
+## ✏️  Introduction
 
-`Mimics` are fully-collateralized derivative tokens on Polygon that leverage oracles to mirror the appraised price NFT collections. Anyone can mint new Mimics using the Mimicry platform. Mimics are collateralized by ERC-20 tokens. Network participants may collateralize their positions using the Mimicry Network Token ($MIME) to receive rewards.
+Every market on earth has two sides; bulls who think the price of something is going up, and bears who think the price is going down. Very often those two sides disagree about which outcome is more likely and this can lead to inefficient and illiquid markets. **** We’ve developed a novel system that leverages game theory and economic incentives to solve this difficult problem.
 
-Mimicry is inspired by the Synthentix protocol's pooled collateral model. Mimics may be traded with infinite liquidity and zero slippage due to their relative P\&L algorithm against the global collateral pool. Trades between Mimics generate a small fee. This mechanism effectively solves the liquidity issues that plague NFT investors.
+### 🎭 Positions and 🎪 Markets
 
-### Why is this needed?
+Players in our game can use ERC-20 tokens to open perpetual positions, called <mark style="color:orange;">`Mimes`</mark>, that represent their exposure to one or both sides of a market, which we sometimes call a <mark style="color:orange;">`Pantomime`</mark>.
 
-![Gary V on NFTs](<.gitbook/assets/GaryVee on NFTs (2).png>)
+> **A concrete example of a Mime is:** _<mark style="color:purple;">a perpetual long position opened on 12/15/2022 at 12:01 p.m. GMT within a given Pantomime market, using 1,000 DAI tokens.</mark>_
 
-### Why Not Just Use Synthetix?
+Mimes gain or lose value as the [reference price](#user-content-fn-1)[^1] for a Pantomime changes relative to the skew of at-risk capital provided by bulls and bears, within their respective long and short positions. All reference prices are known using deterministic on-chain oracle feeds that update when new transaction data is available within a market. Players may choose to have their deposited capital, plus or minus any profits/losses, returned at any time by destroying their Mime and paying a small exit fee to the protocol.
 
-Mimicry would not exist without the prior work of the Synthetix team, and so it almost goes without saying that we are extremely grateful for their work. However, there are several notable differences between the two protocols:
+> **A concrete example of a Pantomime Market is:** _<mark style="color:purple;">the market capitalization of the World of Women NFT collection, updated whenever the market capitalization for the entire World of Women collection changes by 0.5%, or once per 60 minutes, whichever comes first.</mark>_
 
-1. Mimicry is designed to mimic non-fungibles, where Sythentix is designed primarily with fungible tokens in mind. We believe the nature of the game of the global debt pool necessitates two distinct networks.
-2. We use a different profit and loss algorithm.
-3. Synthetix has no mechanism available for depositors to be able to rapidly create new Synths that mimic the floor price of an NFT collection. Instead the network requires an improvement proposal and DAO vote in order to introduce each new synth.
-4. Synthetix requires that participants begin with $SNX and mint sUSD, and then swap sUSD for another synth. We believe this UX can be simplified and aim to do so by allowing Mimicry participants to use a wide array of ERC-20 tokens to mint any Mimic.
-5. Synthetix is designed to scale using Optimism, while Mimicry is built for Polygon.
+{% hint style="info" %}
+Note that most Chainlink price-feeds on the Ethereum Mainnet update whenever there is a 0.5% deviation in the reference price, or once per 60 minutes, whichever comes first. Hense the reference used here.
+{% endhint %}
+
+<figure><img src=".gitbook/assets/Screen Shot 2023-02-08 at 12.37.01 PM.png" alt=""><figcaption><p>Mime minting and burning process</p></figcaption></figure>
+
+{% hint style="info" %}
+Although Mimes are delivered to player wallets as ERC-721 tokens, they are not the NFTs that were minted as part of a collection like _World of Women_ or _Bored Ape Yacht Club_. A Mime is simply a perpetual position within a market.
+{% endhint %}
+
+[^1]: For example, the total market capitalization of the Bored Ape Yacht Club NFT collection.

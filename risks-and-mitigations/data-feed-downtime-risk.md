@@ -1,0 +1,3 @@
+# Data Feed Downtime Risk
+
+Reference-prices must be reliable in order for the protocol to be able to function properly. This risk can be mitigated when Directors use price oracles that aim to source identical price information from multiple data providers. For example, any oracle reporter can deterministically calculate the market capitalization of an NFT collection’s OpeaSea sales using that collection’s sales history sourced from Dune Analytics, Reservoir Protocol, the OpenSea API, or a custom Subgraph that monitors OpenSea’s smart contract events. Conveniently, when different oracle reporters send deterministic data to the blockchain using different technology stacks, they are also reducing price manipulation risk.
