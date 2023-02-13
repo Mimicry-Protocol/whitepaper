@@ -35,7 +35,7 @@ Mimes gain or lose value as the [reference price](#user-content-fn-1)[^1] for a 
 > **A concrete example of a Pantomime Market is:** _<mark style="color:purple;">the market capitalization of the World of Women NFT collection, updated whenever the market capitalization for the entire World of Women collection changes by 0.5%, or once per 60 minutes, whichever comes first.</mark>_
 
 {% hint style="info" %}
-Note that most Chainlink price-feeds on the Ethereum Mainnet update whenever there is a 0.5% deviation in the reference price, or once per 60 minutes, whichever comes first. Hense the reference used here.
+Note that most Chainlink price-feeds on the Ethereum Mainnet update whenever there is a 0.5% deviation in the reference price, or once per 60 minutes, whichever comes first. Hence the reference used here.
 {% endhint %}
 
 <figure><img src=".gitbook/assets/Screen Shot 2023-02-08 at 12.37.01 PM.png" alt=""><figcaption><p>Mime minting and burning process</p></figcaption></figure>
