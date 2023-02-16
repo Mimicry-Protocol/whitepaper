@@ -38,3 +38,4 @@
   * [Balancer Shortage Risk](risks-and-mitigations/balancer-shortage-risk.md)
 * [🗣 Notable Vocabulary](notable-vocabulary.md)
 * [🗓 Roadmap](roadmap.md)
+* [🎨 Brand Assets](brand-assets.md)
