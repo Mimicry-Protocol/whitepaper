@@ -6,7 +6,7 @@ description: >-
 
 # ⚙ Core Mechanics
 
-<figure><img src="../../.gitbook/assets/Screen Shot 2023-02-08 at 1.45.43 PM.png" alt=""><figcaption><p>Illustration of Mimicry GUI with description of each component</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screen Shot 2023-02-08 at 1.45.43 PM.png" alt=""><figcaption><p>Illustration of Mimicry GUI with description of each component</p></figcaption></figure>
 
 ## **🔎 Overview**
 

@@ -10,7 +10,7 @@ description: >-
 
 Players may take positions by selecting a number of variables and depositing ERC-20 collateral. New positions are represented as ERC-721 tokens (Mimes).&#x20;
 
-![Mimicry data flow diagram](<../.gitbook/assets/Mimicry Swim Lanes (2).png>)
+![Mimicry data flow diagram](<.gitbook/assets/Mimicry Swim Lanes (2).png>)
 
 ### Mimics as NFTs
 
@@ -22,6 +22,6 @@ Each minted Mimic will contain specialized metadata written to the blockchain. W
 * The amount of profit, expressed as a percentage
 * The amount of rewards earned
 
-| ![](<../.gitbook/assets/nft card (1).png>) | ![](<../.gitbook/assets/Frame 108.png>) |
-| ------------------------------------------ | --------------------------------------- |
+| ![](<.gitbook/assets/nft card (1).png>) | ![](<.gitbook/assets/Frame 108.png>) |
+| --------------------------------------- | ------------------------------------ |
 
