@@ -12,6 +12,6 @@ Crew will receive 10% of their tokens at the TGE, and their remaining tokens wil
 
 The Mimicry Foundation will receive their tokens via a linear stream over the 60 months following the TGE. Tokens granted to market makers will be fully-vested at the time of the grant in exchange for long-term contractual agreements for market-making services. Claimed community rewards and airdrop tokens will vest linearly over the 12 months following their minting by members of the community.
 
-<figure><img src="../.gitbook/assets/Screen Shot 2023-02-10 at 4.34.31 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screen Shot 2023-02-10 at 4.34.31 PM.png" alt=""><figcaption></figcaption></figure>
 
 In no particular order or ratio, we anticipate that the majority of the earliest recipients of vested $MIMIC will operate as Producers to provide liquidity to the protocol and earn rewards, or (b) deposit their $MIMIC within LP pools on decentralized exchanges to earn trading fees.
