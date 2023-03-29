@@ -47,4 +47,5 @@
 
 ## For Devs
 
+* [📜 Contracts and Wallets](for-devs/contracts-and-wallets.md)
 * [💾 SDK Coming Soon](for-devs/sdk-coming-soon.md)
