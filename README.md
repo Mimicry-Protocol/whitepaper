@@ -9,7 +9,9 @@ coverY: 0
 # 👨🏫 Protocol Overview
 
 {% hint style="info" %}
-**Mimicry's mission is to help protect speculators from getting rekt. We believe this protocol needs to exist so people have a safer alternative to buying and holding illiquid assets like NFTs.**
+**Mimicry's mission is to accelerate universal adoption of free markets.**&#x20;
+
+**We believe this protocol needs to exist so people have a safer alternative to buying and holding illiquid assets like NFTs.**
 
 This protocol operates as a [hyperstructure](https://jacob.energy/hyperstructures.html) and aims to solve common problems within illiquid and inefficient asset classes such as NFTs, distilled spirits, trading cards, and more. For example, we address the following desires:
 
