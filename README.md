@@ -24,7 +24,7 @@ This protocol operates as a [hyperstructure](https://jacob.energy/hyperstructure
 
 ## ✏️  Introduction
 
-Every market on earth has two sides; bulls who think the price of something is going up, and bears who think the price is going down. Very often those two sides disagree about which outcome is more likely and this can lead to inefficient and illiquid markets. **** We’ve developed a novel system that leverages game theory and economic incentives to solve this difficult problem.
+Every market on earth has two sides; bulls who think the price of something is going up, and bears who think the price is going down. Very often those two sides disagree about which outcome is more likely and this can lead to inefficient and illiquid markets. We’ve developed a novel system that leverages game theory and economic incentives to solve this difficult problem.
 
 ### 🎭 Positions and 🎪 Markets
 
