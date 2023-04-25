@@ -6,7 +6,7 @@ description: Anyone can launch Mimicry Markets using this simple guide.
 
 ## 1. Request Access
 
-At this time your wallet must be approved in order to launch a new market on Mimicry. Please apply for approval [here](https://v593x222y0p.typeform.com/to/q76aaHsv?utm\_source=docs.mimicry.org) and then ping the team on Discord.
+At this time your wallet must be approved in order to launch a new market on Mimicry. Please apply for approval [here](https://v593x222y0p.typeform.com/to/q76aaHsv?utm\_source=docs.mimicry.org) and then ping the team on Discord in the [mimicry-markets channel](https://discord.com/channels/931357054218666005/1100530833074438244).
 
 ## 2. Create a New Data Feed
 
