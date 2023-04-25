@@ -6,18 +6,21 @@
 
 #### PoS Mainnet
 
-* Accountant: 0x
-* Market: 0x
 * Mimicry: 0x
-* MimicToken: 0x
+* Market: 0x
+* Accountant: 0x
 * PositionToken: 0x
+* _Value Providers_
+  * OpenMarketsOracleProvider: 0x
 
 #### Mumbai
 
-* Market: 0x
 * Mimicry: 0x
-* MimicToken: 0x
+* Market: 0x
+* Accountant: 0x
 * PositionToken: 0x
+* _Value Providers_
+  * OpenMarketsOracleProvider: 0x
 
 ## Off-Chain Reporting Oracle
 

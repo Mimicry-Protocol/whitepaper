@@ -52,3 +52,9 @@
   * [Contracts Reference](for-devs/contracts-and-wallets.md)
   * [Wallets Reference](for-devs/contracts-and-wallets/wallets-reference.md)
 * [💾 SDK Coming Soon](for-devs/sdk-coming-soon.md)
+
+## FOR COMMUNITY
+
+* [🔗 Official Links](for-community/official-links.md)
+* [🎪 Markets](for-community/markets/README.md)
+  * [Official Markets](for-community/markets/official-markets.md)
