@@ -38,4 +38,4 @@
 
 #### Gelato Web3 Functions
 
-* Mashup: [QmRXSq9Z9SNHCxe8X995JdYerv3FhqDCfvj5R71moy9A81](https://ipfs.io/ipfs/QmRXSq9Z9SNHCxe8X995JdYerv3FhqDCfvj5R71moy9A81)
+* Mashup: [QmYLVvCJmGYNTSzD2iizn6mCg44kkVBQRgNRJ6DHMRAR4X](https://ipfs.io/ipfs/QmYLVvCJmGYNTSzD2iizn6mCg44kkVBQRgNRJ6DHMRAR4X)
