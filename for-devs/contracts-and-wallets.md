@@ -6,7 +6,7 @@
 
 #### PoS Mainnet
 
-* Mimicry: 0x
+* Mimicry: [0x7626E95B0bCf6F9716B6197D43F59E6E4CE3C24d](https://polygonscan.com/address/0x7626E95B0bCf6F9716B6197D43F59E6E4CE3C24d)
 * Market: 0x
 * Accountant: 0x
 * PositionToken: 0x
