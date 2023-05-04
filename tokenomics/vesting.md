@@ -6,7 +6,7 @@ Pre-Product Investors will receive 10% of their $MIMIC tokens at the TGE, and th
 
 Post-Product Investors have notably less risk than Pre-Product Investors, so they will receive 10% of their $MIMIC tokens at the TGE, and the remaining tokens will be streamed linearly over the next 36 months. Post-Product Investors will also have a contractual mandate to only use their vested tokens during the first 12 months following the TGE for providing liquidity to the protocol within Mimes.&#x20;
 
-Crew will receive 10% of their tokens at the TGE, and their remaining tokens will be streamed linearly over the next 36 months.&#x20;
+Crew will receive 0% of their tokens at the TGE, and their remaining tokens will be streamed linearly over the next 36 months.&#x20;
 
 ### **Community**
 
