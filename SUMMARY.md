@@ -39,6 +39,7 @@
   * [Market Abandonment Risk](risks-and-mitigations/market-abandonment-risk.md)
   * [Balancer Shortage Risk](risks-and-mitigations/balancer-shortage-risk.md)
 * [🗣 Notable Vocabulary](notable-vocabulary.md)
+* [🤝 Partner Integrations](whitepaper/partner-integrations.md)
 * [🗓 Roadmap](roadmap.md)
 
 ## For Partners
