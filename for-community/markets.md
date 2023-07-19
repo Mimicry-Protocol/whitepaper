@@ -10,7 +10,7 @@ At this time your wallet must be approved in order to launch a new market on Mim
 
 ## 2. Create a New Data Feed
 
-**a)** Refer to the [contracts reference](../../for-devs/contracts-and-wallets.md#off-chain-reporting-oracle) for the address of the OpenMarketsOracle contract on Polygon PoS or Mumbai.&#x20;
+**a)** Refer to the [contracts reference](../for-devs/contracts-and-wallets.md#off-chain-reporting-oracle) for the address of the OpenMarketsOracle contract on Polygon Mumbai.&#x20;
 
 **b)** From there you'll need to call the `createDataFeed()` function the contract, passing the data feed _nickname_ and a list of one or more _allowed scribes_.&#x20;
 
@@ -18,15 +18,15 @@ At this time your wallet must be approved in order to launch a new market on Mim
 
 **c)** Inspect the logs after the `createDataFeed()` transaction is successful in order to find the `dataFeedId`. The ID will be used later when setting up the W3F.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-25 at 3.18.53 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-04-25 at 3.18.53 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## 3. Create an Automated Task in Gelato
 
 **a)** Visit [this page](https://beta.app.gelato.network/new-task) in the Gelato W3F application and connect your wallet. You can also reach this page by clicking the New Task button on the dapp homepage.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-04-25 at 3.19.36 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-04-25 at 3.19.36 PM.png" alt=""><figcaption></figcaption></figure>
 
-**b)** You'll need to start off by pasting the IPFS CID of your W3F. We recommend using the _Mashup_ function that we've officially published and maintain. Please see the [Contracts Reference](../../for-devs/contracts-and-wallets.md#gelato-web3-functions) for the latest CID of the function you'd like to use.
+**b)** You'll need to start off by pasting the IPFS CID of your W3F. We recommend using the _Mashup_ function that we've officially published and maintain. Please see the [Contracts Reference](../for-devs/contracts-and-wallets.md#gelato-web3-functions) for the latest CID of the function you'd like to use.
 
 **c)** Each W3F schema is different, but assuming you're using one of our officially supported functions, you'll need to add the following parameters:
 
@@ -34,7 +34,7 @@ At this time your wallet must be approved in order to launch a new market on Mim
 >
 > And all arrays of strings must be formatted as follows: `["value","value"]`
 
-* `oracleAddress` See the [contracts reference](../../for-devs/contracts-and-wallets.md#off-chain-reporting-oracle) for the appropriate OpenMarketsOracle contract.
+* `oracleAddress` See the [contracts reference](../for-devs/contracts-and-wallets.md#off-chain-reporting-oracle) for the appropriate OpenMarketsOracle contract.
 * `dataFeedId` Paste the _dataFeedId_ that you previously created in step 2.c. above.
 * `nftCollections` This field accepts a comma-separated array of one or more NFT collections pointers, in the following format: `["chainId:contractAddress","chainId:contractAddress"]`&#x20;
 * `tokens` This field operates the same way as `nftCollections`, expect that it expects contract address of ERC-20 tokens.
@@ -51,4 +51,4 @@ API keys must be set for each provider. The easiest way to do this is to clone t
 
 ## 5. Fund Your Task
 
-The last step is to [fund](http://127.0.0.1:5000/s/1v4pHmBLW0tkrfgW1nyn/tips-and-tricks/speed-up-with-quick-find) your Gelato W3F account so there is ample money available for gas. We generally recommend funding approximately $1,000 per task per year, which assumes an average of $0.078 per transaction, and 35 transactions per day.\
+The last step is to fund your Gelato W3F account so there is ample money available for gas. We generally recommend funding approximately $1,000 per task per year, which assumes an average of $0.078 per transaction, and 35 transactions per day.\
