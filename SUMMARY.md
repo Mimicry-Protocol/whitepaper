@@ -42,10 +42,6 @@
 * [🤝 Partner Integrations](whitepaper/partner-integrations.md)
 * [🗓 Roadmap](roadmap.md)
 
-## For Partners
-
-* [🎨 Brand Assets](brand-assets.md)
-
 ## For Devs
 
 * [📜 Contracts & Wallets](for-devs/contracts-and-wallets/README.md)
@@ -57,4 +53,5 @@
 ## FOR COMMUNITY
 
 * [🔗 Official Links](for-community/official-links.md)
+* [🎨 Brand Assets](for-community/brand-assets.md)
 * [🎪 Markets](for-community/markets.md)
