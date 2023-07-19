@@ -45,5 +45,5 @@ Various revenue streams will be separated to help ensure the most transparent bo
 
 * Reserved for revenue from trading fees: tradingfees.revenue.mimicry.eth
 * Reserved for revenue from yield farming: farming.revenue.mimicry.eth
-* Reserved for revenue from advertising: ads.revenue.mimicry.eth
+* Reserved for revenue from promoted markets: ads.revenue.mimicry.eth
 

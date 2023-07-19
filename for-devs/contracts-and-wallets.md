@@ -1,41 +1,14 @@
+---
+description: >-
+  With the exception of the OpenMarkets Oracle, we often redeploy contracts on
+  testnet. Accordingly, we are intentionally omitting old and/or WIP addresses.
+---
+
 # Contracts Reference
-
-## Mimicry Protocol
-
-### Polygon
-
-#### PoS Mainnet
-
-* Mimicry: [0x7626E95B0bCf6F9716B6197D43F59E6E4CE3C24d](https://polygonscan.com/address/0x7626E95B0bCf6F9716B6197D43F59E6E4CE3C24d)
-* Market: 0x
-* Accountant: 0x
-* PositionToken: 0x
-* _Value Providers_
-  * OpenMarketsOracleProvider: 0x
-
-#### Mumbai
-
-* Mimicry: 0x
-* Market: 0x
-* Accountant: 0x
-* PositionToken: 0x
-* _Value Providers_
-  * OpenMarketsOracleProvider: 0x
 
 ## Off-Chain Reporting Oracle
 
-### Polygon
-
-#### PoS Mainnet
-
-* OpenMarketsOracle: [0x454F9C0ab3119f8B9209B52A3f0191268e2b8812](https://polygonscan.com/address/0x454F9C0ab3119f8B9209B52A3f0191268e2b8812)
-
 #### Mumbai
 
-* OpenMarketsOracle: [0x1C60320EF9aeD1ad1edf25afD82596167832F557](https://mumbai.polygonscan.com/address/0x1C60320EF9aeD1ad1edf25afD82596167832F557)
+* OpenMarketsOracle: [0x0aC47a0aBf3f96df1E5A3F31Ea475ad99f2D9A31](https://mumbai.polygonscan.com/address/0x0aC47a0aBf3f96df1E5A3F31Ea475ad99f2D9A31)
 
-### IPFS
-
-#### Gelato Web3 Functions
-
-* Mashup: [QmXQy3b9iVrQn4asXyuDrvh7HuuknQyaPQSEKgVJh1pbQ4](https://ipfs.io/ipfs/QmXQy3b9iVrQn4asXyuDrvh7HuuknQyaPQSEKgVJh1pbQ4)

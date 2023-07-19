@@ -24,12 +24,7 @@ The following chart illustrates how tokens might flow between two sides of a Pan
 
 > **In this example:** <mark style="color:purple;">Let’s assume for a given Pantomime that Alice represents all bulls who believe the reference price will rise, and Bob represents all bears who think the price will fall. And they are both using USDT. As you can see below, losers always lose at a 1:1 ratio of reference price movement, while winners earn at the rate of reference price movement relative to their True Odds.</mark>
 
-| <p><br></p> | **Reference Price % Change**  | **True Odds**   | **Alice (Long)** | **Bob (Short)** | **Value Transfer Event** |
-| ----------- | ----------------------------- | --------------- | ---------------- | --------------- | ------------------------ |
-| Time 0      | n/a                           | n/a             | 100              | 0               | Alice opens a position   |
-| Time 1      | n/a                           | 0.5x vs. 2x     | 100              | 50              | Bob opens a position     |
-| Time 2      | 50%                           | 0.16x vs. 6.25x | 125              | 20              | Bob withdraws 5 USDT     |
-| Time 3      | -50%                          | n/a             | 62.50            | 0               | Bob withdraws 82.50 USDT |
+<table data-header-hidden><thead><tr><th width="114"></th><th width="117"></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td><br></td><td><strong>Reference Price % Change</strong> </td><td><strong>True Odds</strong></td><td><strong>Alice (Long)</strong></td><td><strong>Bob (Short)</strong></td><td><strong>Value Transfer Event</strong></td></tr><tr><td>Time 0</td><td>n/a</td><td>n/a</td><td>100</td><td>0</td><td>Alice opens a position</td></tr><tr><td>Time 1</td><td>n/a</td><td>0.5x vs. 2x</td><td>100</td><td>50</td><td>Bob opens a position</td></tr><tr><td>Time 2</td><td>50%</td><td>0.16x vs. 6.25x</td><td>125</td><td>20</td><td>Bob withdraws 5 USDT</td></tr><tr><td>Time 3</td><td>-50%</td><td>n/a</td><td>62.50</td><td>0</td><td>Bob withdraws 82.50 USDT</td></tr></tbody></table>
 
 {% hint style="success" %}
 **Related:** [Skew Change Risk](../risks-and-mitigations/skew-change-risk.md)

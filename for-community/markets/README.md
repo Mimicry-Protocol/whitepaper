@@ -14,7 +14,7 @@ At this time your wallet must be approved in order to launch a new market on Mim
 
 **b)** From there you'll need to call the `createDataFeed()` function the contract, passing the data feed _nickname_ and a list of one or more _allowed scribes_.&#x20;
 
-> **Pro Tip:** The most secure data feeds will only authorize a single scribe and that will be the [dedicated msg.sender](http://localhost:5000/s/1bgWuA312BXaMSughVVw/disclaimer) associated with your Gelato Web3 Functions (W3F) account.
+> **Pro Tip:** The most secure data feeds will only authorize a single scribe and that will be the [dedicated msg.sender](http://127.0.0.1:5000/s/1bgWuA312BXaMSughVVw/disclaimer) associated with your Gelato Web3 Functions (W3F) account.
 
 **c)** Inspect the logs after the `createDataFeed()` transaction is successful in order to find the `dataFeedId`. The ID will be used later when setting up the W3F.
 
@@ -51,4 +51,4 @@ API keys must be set for each provider. The easiest way to do this is to clone t
 
 ## 5. Fund Your Task
 
-The last step is to [fund](http://localhost:5000/s/1v4pHmBLW0tkrfgW1nyn/tips-and-tricks/speed-up-with-quick-find) your Gelato W3F account so there is ample money available for gas. We generally recommend funding approximately $1,000 per task per year, which assumes an average of $0.078 per transaction, and 35 transactions per day.\
+The last step is to [fund](http://127.0.0.1:5000/s/1v4pHmBLW0tkrfgW1nyn/tips-and-tricks/speed-up-with-quick-find) your Gelato W3F account so there is ample money available for gas. We generally recommend funding approximately $1,000 per task per year, which assumes an average of $0.078 per transaction, and 35 transactions per day.\
